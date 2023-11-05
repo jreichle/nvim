@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["haskell-vim"] = {
+    loaded = true,
+    path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/haskell-vim",
+    url = "https://github.com/neovimhaskell/haskell-vim"
+  },
   ["hologram.nvim"] = {
     loaded = true,
     path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/hologram.nvim",
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/jupytext.vim",
     url = "https://github.com/goerz/jupytext.vim"
+  },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -128,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -208,6 +213,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-hindent"] = {
+    loaded = true,
+    path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/vim-hindent",
+    url = "https://github.com/alx741/vim-hindent"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/Users/johannesreichle/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 

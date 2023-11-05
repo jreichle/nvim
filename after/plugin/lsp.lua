@@ -1,15 +1,11 @@
 local lsp = require('lsp-zero').preset({})
 
--- lsp.ensure_installed({
--- 	'rust_analyzer',
--- })
-
 local cmp = require('cmp')
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
+local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
-  ['<Tab>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<Tab-Shift>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<Enter>'] = cmp.mapping.confirm({ select = true }),
+    ['<Tab>'] = cmp.mapping.select_next_item(cmp_select),
+    ['<Tab-Shift>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<Enter>'] = cmp.mapping.confirm({ select = true }),
 })
 
 lsp.setup_nvim_cmp({
@@ -45,7 +41,9 @@ vim.diagnostic.config({
     virtual_text = true
 })
 
--- (Optional) Configure lua language server for neovim
+-- Individual Languages setup
+
+-- Lua
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()

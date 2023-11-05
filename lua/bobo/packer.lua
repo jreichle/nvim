@@ -14,7 +14,10 @@ return require('packer').startup(function(use)
 
     -- colorscheme
     use { 'ellisonleao/gruvbox.nvim' }
-    use "EdenEast/nightfox.nvim"
+    use 'Mofiqul/vscode.nvim'
+    use "rebelot/kanagawa.nvim"
+
+
 
     use 'BurntSushi/ripgrep'
     use { 'nvim-telescope/telescope-fzf-native.nvim', run =
@@ -25,8 +28,8 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use ('nvim-tree/nvim-tree.lua')
-    use ('nvim-tree/nvim-web-devicons')
+    use('nvim-tree/nvim-tree.lua')
+    use('nvim-tree/nvim-web-devicons')
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
@@ -59,8 +62,12 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- haskell
+    use 'neovimhaskell/haskell-vim'
+    use 'alx741/vim-hindent'
+
     -- for jupyter
     use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
-    use {'edluffy/hologram.nvim'} -- image viewing in terminal
-    use {'goerz/jupytext.vim'}
+    use { 'edluffy/hologram.nvim' } -- image viewing in terminal
+    use { 'goerz/jupytext.vim' }
 end)
