@@ -15,7 +15,5 @@ vim.g.node_host_prog = home_dir .. node_bin .. "/node"
 -- (handled by :Mason currently)
 vim.cmd("let $PATH = '" .. home_dir .. node_bin .. ":' . $PATH")
 
--- colorscheme
--- "dark" or "light" for light mode
-vim.o.background = "dark"
+vim.o.background = "dark" -- or light
 vim.cmd([[colorscheme gruvbox]])

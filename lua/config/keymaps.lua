@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 --
 vim.g.mapleader = " "
-vim.g.maplocalleader = "'"
+vim.g.maplocalleader = "\\"
 
 -- toggle between last files
 vim.cmd("nnoremap <leader>l <c-^>")
@@ -13,10 +13,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- merge line above
 vim.keymap.set("n", "J", "mzJ`z")
-
--- scrolling down, staying centered
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- when searched with visual mode
 vim.keymap.set("n", "n", "nzzzv")
@@ -33,8 +29,6 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-
-vim.keymap.set("n", "u", "uzzzz")
 
 -- LSP custom remaps
 vim.keymap.set("n", "<leader>j", vim.diagnostic.goto_prev)

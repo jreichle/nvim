@@ -15,9 +15,22 @@ return {
     },
     mappings = true,
     infoview = {
-      width = 60,
+      width = 90,
       height = 20,
+      vertical_position = "left",
       horizontal_position = "bottom",
     },
   },
+
+  init = function()
+    vim.api.nvim_create_autocmd("FileType", {
+      desc = "Restart Lean File",
+
+      pattern = "lean",
+      callback = function()
+        vim.keymap.set("n", "<LocalLeader>RF>", "<Cmd>LeanRestartFile<CR>")
+        vim.keymap.set("n", "<LocalLeader>RL>", "<Cmd>LeanRestartFile<CR>")
+      end,
+    })
+  end,
 }
